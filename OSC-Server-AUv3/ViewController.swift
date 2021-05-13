@@ -10,29 +10,39 @@ import SwiftOSC
 
 var serverOSC = OSCServer(address: "", port: 3545)
 
-
-
-class ViewController: UIViewController {
-    
-    
+class ViewController: UIViewController, OSCServerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        serverOSC.start()
-        
-        class OSCHandler: OSCServerDelegate {
-            
-            func didReceive(_ message: OSCMessage){
-                if let integer = message.arguments[0] as? Int {
-                    print("Received int \(integer)")
-                } else {
-                    print(message)
-                }
-            }
-        }
-        serverOSC.delegate =  OSCHandler()
-    
+        serverOSC.delegate = self
     }
+    
+    func didReceive(_ message: OSCMessage){
+        
+        print(message)
+        
+//            if let integer = message.arguments[0] as? Int {
+//                print("Received int \(integer)")
+//            } else {
+//                print(message)
+//            }
+    }
+    
+    @IBAction func startStop(_ sender: UIButton) {
+        
+        if( sender.isSelected ){
+            sender.isSelected = false
+            sender.setTitle("Start", for: .normal)
+            serverOSC.stop()
+        }
+        else{
+            sender.isSelected = true
+            sender.setTitle("Stop", for: .normal)
+            serverOSC.start()
+        }
+
+    }
+    
 }
 
