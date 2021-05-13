@@ -7,34 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C313863264D4680003A39AD /* SwiftOSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CEB874A264D45570042E7C5 /* SwiftOSC.framework */; };
+		7C313864264D4680003A39AD /* SwiftOSC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7CEB874A264D45570042E7C5 /* SwiftOSC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7CA8EAC8264C3C02006C5E52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA8EAC7264C3C02006C5E52 /* AppDelegate.swift */; };
 		7CA8EACA264C3C02006C5E52 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA8EAC9264C3C02006C5E52 /* SceneDelegate.swift */; };
 		7CA8EACC264C3C02006C5E52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA8EACB264C3C02006C5E52 /* ViewController.swift */; };
 		7CA8EACF264C3C02006C5E52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CA8EACD264C3C02006C5E52 /* Main.storyboard */; };
 		7CA8EAD1264C3C04006C5E52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CA8EAD0264C3C04006C5E52 /* Assets.xcassets */; };
 		7CA8EAD4264C3C04006C5E52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CA8EAD2264C3C04006C5E52 /* LaunchScreen.storyboard */; };
-		7CA8EADF264C3C05006C5E52 /* OSC_Server_AUv3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA8EADE264C3C05006C5E52 /* OSC_Server_AUv3Tests.swift */; };
-		7CA8EAEA264C3C05006C5E52 /* OSC_Server_AUv3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA8EAE9264C3C05006C5E52 /* OSC_Server_AUv3UITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7CA8EADB264C3C04006C5E52 /* PBXContainerItemProxy */ = {
+		7CEB8749264D45570042E7C5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 7CA8EABC264C3C02006C5E52 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7CA8EAC3264C3C02006C5E52;
-			remoteInfo = "OSC-Server-AUv3";
-		};
-		7CA8EAE6264C3C05006C5E52 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7CA8EABC264C3C02006C5E52 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7CA8EAC3264C3C02006C5E52;
-			remoteInfo = "OSC-Server-AUv3";
+			containerPortal = 7CEB8745264D45570042E7C5 /* iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 036486761F820BBD00F3D6CE;
+			remoteInfo = SwiftOSC;
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		7C313865264D4680003A39AD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7C313864264D4680003A39AD /* SwiftOSC.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		7C313877264D4C37003A39AD /* OSC-Server-AUv3.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "OSC-Server-AUv3.entitlements"; sourceTree = "<group>"; };
 		7CA8EAC4264C3C02006C5E52 /* OSC-Server-AUv3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OSC-Server-AUv3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CA8EAC7264C3C02006C5E52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CA8EAC9264C3C02006C5E52 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,12 +51,7 @@
 		7CA8EAD0264C3C04006C5E52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CA8EAD3264C3C04006C5E52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CA8EAD5264C3C04006C5E52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7CA8EADA264C3C04006C5E52 /* OSC-Server-AUv3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OSC-Server-AUv3Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7CA8EADE264C3C05006C5E52 /* OSC_Server_AUv3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSC_Server_AUv3Tests.swift; sourceTree = "<group>"; };
-		7CA8EAE0264C3C05006C5E52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7CA8EAE5264C3C05006C5E52 /* OSC-Server-AUv3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OSC-Server-AUv3UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7CA8EAE9264C3C05006C5E52 /* OSC_Server_AUv3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSC_Server_AUv3UITests.swift; sourceTree = "<group>"; };
-		7CA8EAEB264C3C05006C5E52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CEB8745264D45570042E7C5 /* iOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = iOS.xcodeproj; path = "../../../../../../Users/fjw/Downloads/SwiftOSC-master/Framework/iOS/iOS.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,33 +59,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7CA8EAD7264C3C04006C5E52 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7CA8EAE2264C3C05006C5E52 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				7C313863264D4680003A39AD /* SwiftOSC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C313861264D4680003A39AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7CA8EABB264C3C02006C5E52 = {
 			isa = PBXGroup;
 			children = (
+				7CEB8745264D45570042E7C5 /* iOS.xcodeproj */,
 				7CA8EAC6264C3C02006C5E52 /* OSC-Server-AUv3 */,
-				7CA8EADD264C3C04006C5E52 /* OSC-Server-AUv3Tests */,
-				7CA8EAE8264C3C05006C5E52 /* OSC-Server-AUv3UITests */,
 				7CA8EAC5264C3C02006C5E52 /* Products */,
+				7C313861264D4680003A39AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,8 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				7CA8EAC4264C3C02006C5E52 /* OSC-Server-AUv3.app */,
-				7CA8EADA264C3C04006C5E52 /* OSC-Server-AUv3Tests.xctest */,
-				7CA8EAE5264C3C05006C5E52 /* OSC-Server-AUv3UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +94,7 @@
 		7CA8EAC6264C3C02006C5E52 /* OSC-Server-AUv3 */ = {
 			isa = PBXGroup;
 			children = (
+				7C313877264D4C37003A39AD /* OSC-Server-AUv3.entitlements */,
 				7CA8EAC7264C3C02006C5E52 /* AppDelegate.swift */,
 				7CA8EAC9264C3C02006C5E52 /* SceneDelegate.swift */,
 				7CA8EACB264C3C02006C5E52 /* ViewController.swift */,
@@ -110,22 +106,12 @@
 			path = "OSC-Server-AUv3";
 			sourceTree = "<group>";
 		};
-		7CA8EADD264C3C04006C5E52 /* OSC-Server-AUv3Tests */ = {
+		7CEB8746264D45570042E7C5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7CA8EADE264C3C05006C5E52 /* OSC_Server_AUv3Tests.swift */,
-				7CA8EAE0264C3C05006C5E52 /* Info.plist */,
+				7CEB874A264D45570042E7C5 /* SwiftOSC.framework */,
 			);
-			path = "OSC-Server-AUv3Tests";
-			sourceTree = "<group>";
-		};
-		7CA8EAE8264C3C05006C5E52 /* OSC-Server-AUv3UITests */ = {
-			isa = PBXGroup;
-			children = (
-				7CA8EAE9264C3C05006C5E52 /* OSC_Server_AUv3UITests.swift */,
-				7CA8EAEB264C3C05006C5E52 /* Info.plist */,
-			);
-			path = "OSC-Server-AUv3UITests";
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +124,7 @@
 				7CA8EAC0264C3C02006C5E52 /* Sources */,
 				7CA8EAC1264C3C02006C5E52 /* Frameworks */,
 				7CA8EAC2264C3C02006C5E52 /* Resources */,
+				7C313865264D4680003A39AD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -147,42 +134,6 @@
 			productName = "OSC-Server-AUv3";
 			productReference = 7CA8EAC4264C3C02006C5E52 /* OSC-Server-AUv3.app */;
 			productType = "com.apple.product-type.application";
-		};
-		7CA8EAD9264C3C04006C5E52 /* OSC-Server-AUv3Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7CA8EAF1264C3C05006C5E52 /* Build configuration list for PBXNativeTarget "OSC-Server-AUv3Tests" */;
-			buildPhases = (
-				7CA8EAD6264C3C04006C5E52 /* Sources */,
-				7CA8EAD7264C3C04006C5E52 /* Frameworks */,
-				7CA8EAD8264C3C04006C5E52 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7CA8EADC264C3C04006C5E52 /* PBXTargetDependency */,
-			);
-			name = "OSC-Server-AUv3Tests";
-			productName = "OSC-Server-AUv3Tests";
-			productReference = 7CA8EADA264C3C04006C5E52 /* OSC-Server-AUv3Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		7CA8EAE4264C3C05006C5E52 /* OSC-Server-AUv3UITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7CA8EAF4264C3C05006C5E52 /* Build configuration list for PBXNativeTarget "OSC-Server-AUv3UITests" */;
-			buildPhases = (
-				7CA8EAE1264C3C05006C5E52 /* Sources */,
-				7CA8EAE2264C3C05006C5E52 /* Frameworks */,
-				7CA8EAE3264C3C05006C5E52 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7CA8EAE7264C3C05006C5E52 /* PBXTargetDependency */,
-			);
-			name = "OSC-Server-AUv3UITests";
-			productName = "OSC-Server-AUv3UITests";
-			productReference = 7CA8EAE5264C3C05006C5E52 /* OSC-Server-AUv3UITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -195,14 +146,6 @@
 				TargetAttributes = {
 					7CA8EAC3264C3C02006C5E52 = {
 						CreatedOnToolsVersion = 12.5;
-					};
-					7CA8EAD9264C3C04006C5E52 = {
-						CreatedOnToolsVersion = 12.5;
-						TestTargetID = 7CA8EAC3264C3C02006C5E52;
-					};
-					7CA8EAE4264C3C05006C5E52 = {
-						CreatedOnToolsVersion = 12.5;
-						TestTargetID = 7CA8EAC3264C3C02006C5E52;
 					};
 				};
 			};
@@ -217,14 +160,28 @@
 			mainGroup = 7CA8EABB264C3C02006C5E52;
 			productRefGroup = 7CA8EAC5264C3C02006C5E52 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7CEB8746264D45570042E7C5 /* Products */;
+					ProjectRef = 7CEB8745264D45570042E7C5 /* iOS.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				7CA8EAC3264C3C02006C5E52 /* OSC-Server-AUv3 */,
-				7CA8EAD9264C3C04006C5E52 /* OSC-Server-AUv3Tests */,
-				7CA8EAE4264C3C05006C5E52 /* OSC-Server-AUv3UITests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7CEB874A264D45570042E7C5 /* SwiftOSC.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftOSC.framework;
+			remoteRef = 7CEB8749264D45570042E7C5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		7CA8EAC2264C3C02006C5E52 /* Resources */ = {
@@ -234,20 +191,6 @@
 				7CA8EAD4264C3C04006C5E52 /* LaunchScreen.storyboard in Resources */,
 				7CA8EAD1264C3C04006C5E52 /* Assets.xcassets in Resources */,
 				7CA8EACF264C3C02006C5E52 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7CA8EAD8264C3C04006C5E52 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7CA8EAE3264C3C05006C5E52 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,36 +207,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7CA8EAD6264C3C04006C5E52 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7CA8EADF264C3C05006C5E52 /* OSC_Server_AUv3Tests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7CA8EAE1264C3C05006C5E52 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7CA8EAEA264C3C05006C5E52 /* OSC_Server_AUv3UITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		7CA8EADC264C3C04006C5E52 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7CA8EAC3264C3C02006C5E52 /* OSC-Server-AUv3 */;
-			targetProxy = 7CA8EADB264C3C04006C5E52 /* PBXContainerItemProxy */;
-		};
-		7CA8EAE7264C3C05006C5E52 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7CA8EAC3264C3C02006C5E52 /* OSC-Server-AUv3 */;
-			targetProxy = 7CA8EAE6264C3C05006C5E52 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7CA8EACD264C3C02006C5E52 /* Main.storyboard */ = {
@@ -436,6 +350,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "OSC-Server-AUv3/OSC-Server-AUv3.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U2N9D47H83;
 				INFOPLIST_FILE = "OSC-Server-AUv3/Info.plist";
@@ -445,6 +360,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "nl.symphonic-emotions.OSC-Server-AUv3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -455,6 +371,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "OSC-Server-AUv3/OSC-Server-AUv3.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U2N9D47H83;
 				INFOPLIST_FILE = "OSC-Server-AUv3/Info.plist";
@@ -464,92 +381,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "nl.symphonic-emotions.OSC-Server-AUv3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		7CA8EAF2264C3C05006C5E52 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U2N9D47H83;
-				INFOPLIST_FILE = "OSC-Server-AUv3Tests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "nl.symphonic-emotions.OSC-Server-AUv3Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OSC-Server-AUv3.app/OSC-Server-AUv3";
-			};
-			name = Debug;
-		};
-		7CA8EAF3264C3C05006C5E52 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U2N9D47H83;
-				INFOPLIST_FILE = "OSC-Server-AUv3Tests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "nl.symphonic-emotions.OSC-Server-AUv3Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OSC-Server-AUv3.app/OSC-Server-AUv3";
-			};
-			name = Release;
-		};
-		7CA8EAF5264C3C05006C5E52 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U2N9D47H83;
-				INFOPLIST_FILE = "OSC-Server-AUv3UITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "nl.symphonic-emotions.OSC-Server-AUv3UITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "OSC-Server-AUv3";
-			};
-			name = Debug;
-		};
-		7CA8EAF6264C3C05006C5E52 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U2N9D47H83;
-				INFOPLIST_FILE = "OSC-Server-AUv3UITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "nl.symphonic-emotions.OSC-Server-AUv3UITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "OSC-Server-AUv3";
 			};
 			name = Release;
 		};
@@ -570,24 +404,6 @@
 			buildConfigurations = (
 				7CA8EAEF264C3C05006C5E52 /* Debug */,
 				7CA8EAF0264C3C05006C5E52 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7CA8EAF1264C3C05006C5E52 /* Build configuration list for PBXNativeTarget "OSC-Server-AUv3Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7CA8EAF2264C3C05006C5E52 /* Debug */,
-				7CA8EAF3264C3C05006C5E52 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7CA8EAF4264C3C05006C5E52 /* Build configuration list for PBXNativeTarget "OSC-Server-AUv3UITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7CA8EAF5264C3C05006C5E52 /* Debug */,
-				7CA8EAF6264C3C05006C5E52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
